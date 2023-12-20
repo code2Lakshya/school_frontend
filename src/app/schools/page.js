@@ -17,6 +17,7 @@ const SchoolPage = () => {
             .then(res =>{
                 setData(res.response);
                 setLoader(false);
+                window.scrollTo(0,0);
             })
             .catch(error => {
                 console.log(error.message);
