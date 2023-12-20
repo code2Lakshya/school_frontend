@@ -1,0 +1,40 @@
+.school-details-page{
+    padding: 100px 30px 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    min-height: 100vh;
+}
+.school-details{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#nodata{
+   text-align: center;
+   color: white;
+   font-size: 14px;
+}
+.school-cards{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.school-cards > .school-card{
+    width: calc(33% - 20px);
+}
+
+@media screen and (max-width: 900px) {
+    .school-cards > .school-card{
+        width: 31%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .school-cards > .school-card{
+        width: calc(50% - 10px);
+    }
+}
+@media screen and (max-width: 550px) {
+    .school-cards > .school-card{
+        width: 100%;
+    }
+}

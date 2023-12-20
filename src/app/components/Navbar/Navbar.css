@@ -1,0 +1,42 @@
+header{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+nav{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    color: var(--txt-color);
+}
+nav h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:30px;
+    align-items: center;
+}
+nav ul a{
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+@media screen and (max-width: 500px) {
+    nav ul li:nth-child(2){
+        display: none;
+    }
+}

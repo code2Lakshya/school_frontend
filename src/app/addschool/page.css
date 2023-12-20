@@ -1,0 +1,13 @@
+.addschool-page{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 30px;
+    background-color: var(--bg-color);
+}
+.addschool-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
