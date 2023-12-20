@@ -29,7 +29,8 @@
   display: flex;
   gap:20px;
 }
-.home-btn p{
+.home-btn a{
+  display: inline-block;
   background-color: var(--txt-color);
   padding: 10px 20px;
   cursor: pointer;
@@ -42,9 +43,8 @@
   text-decoration: none;
   font-size: 16px;
   font-weight: 700;
-  color:inherit;
 }
-.home-btn p:hover{
+.home-btn a:hover{
   color: var(--txt-color);
   background-color: transparent;
 }
