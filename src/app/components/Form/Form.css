@@ -100,3 +100,8 @@ form button:hover{
     border-radius: 10px;
     user-select: none;
 }
+@media screen and (max-width: 600px) {
+    .form h3{
+        font-size: 39px;
+    }
+}
