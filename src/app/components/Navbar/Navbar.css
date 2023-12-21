@@ -34,6 +34,10 @@ nav ul a{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
+    transition: color 0.3s;
+}
+nav ul a:hover{
+    color: red;
 }
 @media screen and (max-width: 500px) {
     nav ul li:nth-child(2){
