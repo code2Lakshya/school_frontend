@@ -40,3 +40,12 @@ nav ul a{
         display: none;
     }
 }
+
+@media screen and (max-width: 600px) {
+    nav h1{
+        font-size: 22px;
+    }
+    nav ul a{
+        font-size: 14px;
+    }
+}
