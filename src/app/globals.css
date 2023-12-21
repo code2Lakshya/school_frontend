@@ -17,6 +17,8 @@
   color: var(--txt-color);
   flex-direction: column;
   gap:15px;
+  position: relative;
+  z-index: 0;
 }
 .home-page > h1{
   font-size: 50px;
@@ -24,10 +26,14 @@
   letter-spacing: 1.4;
   padding: 0 30px;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 .home-btn{
   display: flex;
   gap:20px;
+  position: relative;
+  z-index: 3;
 }
 .home-btn a{
   display: inline-block;
@@ -47,4 +53,25 @@
 .home-btn a:hover{
   color: var(--txt-color);
   background-color: transparent;
+}
+.home-page > img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+.home-page::before{
+  position: absolute;
+  content:'';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 2;
 }
